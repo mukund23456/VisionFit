@@ -1,0 +1,48 @@
+[debug] [2024-03-06T09:05:30.938Z] ----------------------------------------------------------------------
+[debug] [2024-03-06T09:05:30.942Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mukund Maheshwari\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-03-06T09:05:30.943Z] CLI Version:   13.3.1
+[debug] [2024-03-06T09:05:30.943Z] Platform:      win32
+[debug] [2024-03-06T09:05:30.944Z] Node Version:  v18.12.1
+[debug] [2024-03-06T09:05:30.945Z] Time:          Wed Mar 06 2024 14:35:30 GMT+0530 (India Standard Time)
+[debug] [2024-03-06T09:05:30.946Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-06T09:05:31.112Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-06T09:05:31.113Z] > authorizing via signed-in user (maheshwarimukund023@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Mukund Maheshwari\Desktop\AR-Fitness
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-06T09:05:45.916Z] Using project from CLI flag: augfit-b6391
+[debug] [2024-03-06T09:05:45.920Z] > refreshing access token with scopes: []
+[debug] [2024-03-06T09:05:45.926Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-06T09:05:45.927Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-06T09:05:47.322Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2024-03-06T09:05:47.323Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-06T09:05:47.323Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/augfit-b6391 [none]
+[debug] [2024-03-06T09:05:48.822Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/augfit-b6391 401
+[debug] [2024-03-06T09:05:48.823Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/augfit-b6391 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-03-06T09:05:48.824Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-03-06T09:05:50.629Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\Mukund Maheshwari\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Mukund Maheshwari\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:292:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project augfit-b6391. Please make sure the project exists and your account has permission to access it.
